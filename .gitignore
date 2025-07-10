@@ -1,14 +1,22 @@
+# Virtual environment
 .venv/
-*.csv
-.ipynb_checkpoints/
-pycache/
+
+# Large data files - exclude specific files only
+data/complaints.csv
+data/processed/filtered_complaints.csv
+
+# Vector store files (if needed)
+src/RAG/vector_store/*.bin
+src/RAG/vector_store/*.pkl
+src/RAG/vector_store/*.index
+
+# Python artifacts
 *.pyc
-*.log
-.DS_Store
-.vscode/
 __pycache__/
-*.png
-data/
-.vscode/
-data/raw/*.csv
+
+# Jupyter/Notebook checkpoints
 .ipynb_checkpoints/
+
+# OS generated files
+*.swp
+.DS_Store
